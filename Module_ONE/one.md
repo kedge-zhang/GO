@@ -246,8 +246,25 @@ var (
 * 写一个程序，在终端打印出如下图形；
 			A    
 			AA    
-	      AAA    
-	      AAAA    
-	      AAAAA	
+	                AAA    
+	                AAAA    
+	                AAAAA
+
 ```
+package main
+
+import "fmt"
+
+func Print(n int) {
+	for i :=0; i<=n+1; i++{
+		for  j:=1; j<=i+1; j++{
+			fmt.Printf("A")
+		}
+		fmt.Println()
+	}
+}
+
+func main() {
+	Print(10)
+}
 ```
