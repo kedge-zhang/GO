@@ -24,5 +24,7 @@ vim /etc/profile
     export GOROOT=/usr/local/go
     export GOPATH=/data/Go
     export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+    export GO111MODULE=on
+    export GOPROXY=https://goproxy.io,direct
 source /etc/profile
 ```
